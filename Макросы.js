@@ -60,3 +60,6 @@ function SheetNameDelete(sheetName) {
   }
 };
 
+function hello() {
+  Logger.log("Hello, " + world);
+}
