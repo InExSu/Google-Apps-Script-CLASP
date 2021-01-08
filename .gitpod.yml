@@ -1,4 +1,5 @@
 # Command to start on workspace startup (optional)
 tasks:
   - init: npm install -g @google/clasp
+  - init: npm install && npm run build && npm install -g eslint
     command: clasp login --no-localhost
