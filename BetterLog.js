@@ -382,7 +382,8 @@ function convertUsingSheetPatternLayout_(msg, level) {
 //Sets the log sheet, creating one if it doesn't exist
 function setLogSheet_(optKey, optSheetName) {
   var sheetName = optSheetName || "Log";
-  var ss = (optKey) ? SpreadsheetApp.openById(optKey) : SpreadsheetApp.getActiveSpreadsheet();
+  //var ss = (optKey) ? SpreadsheetApp.openById(optKey) : SpreadsheetApp.getActiveSpreadsheet();
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheets = call_(function() {return ss.getSheets();});
   for (var i = 0; i < sheets.length; i++) {
     if (sheets[i].getName() === sheetName) {

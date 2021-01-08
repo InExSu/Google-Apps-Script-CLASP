@@ -2,8 +2,8 @@
 function BetterLogTest() {
   try {
     // Add one line to use BetterLog and log to a spreadsheet
-    //Logger = BetterLog.useSpreadsheet("Ошибки"); 
-    Logger = useSpreadsheet("Ошибки"); 
+    //Logger = BetterLog.useSpreadsheet("19SvdLfCv-OM9yBSG5ojbDc3UdZA-VqGH1ULtqZgB1AY"); 
+    Logger = useSpreadsheet("Ошибки"); // BetterLog
     
     //Now you can log and it will also log to the spreadsheet
     Logger.log("That's all you need to do");  
